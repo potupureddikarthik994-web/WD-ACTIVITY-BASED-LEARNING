@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Ticket Booking</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 0;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .booking {
+            background-color: white;
+            width: 80%;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .seat {
+            display: inline-block;
+            background-color: lightgreen;
+            padding: 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            .booking {
+                width: 85%;
+            }
+            .card {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>KARTHIK'S TRAVELS AGENCY</h1>
+    <p>Book Your Bus and Train Tickets</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#booking">Booking</a>
+    <a href="#services">Services</a>
+    <a href="#seats">Seats</a>
+</nav>
+
+<div class="booking" id="booking">
+    <h2>Ticket Booking Form</h2>
+
+    <form>
+        <label>Source:</label>
+        <input type="text" placeholder="Enter source city" required>
+
+        <label>Destination:</label>
+        <input type="text" placeholder="Enter destination city" required>
+
+        <label>Travel Date:</label>
+        <input type="date" required>
+
+        <label>Passenger Name:</label>
+        <input type="text" placeholder="Enter passenger name">
+
+        <label>Number of Passengers:</label>
+        <input type="number" min="1" max="10">
+
+        <label>Travel Type:</label>
+        <select>
+            <option>Bus</option>
+            <option>Train</option>
+        </select>
+
+        <button type="submit">Search Tickets</button>
+    </form>
+</div>
+
+<h2 align="center" id="services">Available Services</h2>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Bus Service</h3>
+        <p>AC Sleeper Bus</p>
+        <p>Departure: 9:00 PM</p>
+        <h3>₹800</h3>
+    </div>
+
+    <div class="card">
+        <h3>Train Service</h3>
+        <p>Express Train</p>
+        <p>Departure: 7:00 AM</p>
+        <h3>₹500</h3>
+    </div>
+
+</div>
+
+<h2 align="center">Fare Details</h2>
+
+<table>
+    <tr>
+        <th>Service</th>
+        <th>Type</th>
+        <th>Fare</th>
+    </tr>
+    <tr>
+        <td>Bus</td>
+        <td>AC Sleeper</td>
+        <td>₹800</td>
+    </tr>
+    <tr>
+        <td>Train</td>
+        <td>Express</td>
+        <td>₹500</td>
+    </tr>
+</table>
+
+<h2 align="center" id="seats">Select Your Seat</h2>
+
+<div class="booking">
+    <div class="seat">1</div>
+    <div class="seat">2</div>
+    <div class="seat">3</div>
+    <div class="seat">4</div>
+    <div class="seat">5</div>
+    <div class="seat">6</div>
+    <p>Green = Available Seats</p>
+</div>
+
+
+
+</body>
+</html>
