@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Reservation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .booking {
+            background-color: white;
+            width: 80%;
+            margin: 25px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: darkgreen;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            .booking {
+                width: 85%;
+            }
+
+            .card {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>KARTHIK'S GRAND PALACE HOTEL</h1>
+    <p>Experience Comfort and Luxury</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#booking">Reservation</a>
+</nav>
+
+<div class="booking" id="booking">
+    <h2>Book Your Room</h2>
+
+    <form>
+        <label>Guest Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Check-in Date:</label>
+        <input type="date" required>
+
+        <label>Check-out Date:</label>
+        <input type="date" required>
+
+        <label>Number of Guests:</label>
+        <input type="number" min="1" max="10">
+
+        <label>Room Category:</label>
+        <select>
+            <option>Standard Room</option>
+            <option>Deluxe Room</option>
+            <option>Luxury Suite</option>
+        </select>
+
+        <button type="submit">Reserve Now</button>
+    </form>
+</div>
+
+<h2 align="center" id="rooms">Our Rooms</h2>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRcg9_8ZhglpMpQT4L4tkIHPQ5X0JBzgw7XaISc3-CLgdFMHxJQr4KLdqU&s=10">
+        <h3>Standard Room</h3>
+        <p>Comfortable room with basic facilities.</p>
+        <p>Free Wi-Fi | TV | AC</p>
+        <h3>₹2000 / Night</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1756553862/photo/modern-luxury-hotel-room.jpg?s=612x612&w=0&k=20&c=jn6x4WHlDBEBh-dCWG0lE2gTQWuI2cTvLOmFU05jvvQ=">
+        <h3>Deluxe Room</h3>
+        <p>Spacious room with beautiful interiors.</p>
+        <p>Wi-Fi | TV | AC | Balcony</p>
+        <h3>₹3500 / Night</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/29/2025/06/30115719/06_LANAI_ROOM-2.jpg">
+        <h3>Luxury Suite</h3>
+        <p>Premium room with luxury facilities.</p>
+        <p>Wi-Fi | AC | TV | Swimming Pool</p>
+        <h3>₹5000 / Night</h3>
+    </div>
+
+</div>
+
+<h2 align="center" id="facilities">Hotel Facilities</h2>
+
+<div class="booking">
+    <ul>
+        <li>Free Wi-Fi</li>
+        <li>Swimming Pool</li>
+        <li>Restaurant</li>
+        <li>Room Service</li>
+        <li>Parking</li>
+        <li>Air Conditioning</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
