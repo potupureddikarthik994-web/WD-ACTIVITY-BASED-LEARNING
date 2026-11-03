@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online News Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .featured {
+            background-color: lightblue;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .card h3 {
+            color: darkblue;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>DAILY NEWS</h1>
+    <p>Your Source for Latest News</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#national">National</a>
+    <a href="#international">International</a>
+    <a href="#sports">Sports</a>
+    <a href="#technology">Technology</a>
+    <a href="#business">Business</a>
+</nav>
+
+<div class="featured">
+    <h2>Featured Story</h2>
+    <h3>Welcome to Daily News Portal</h3>
+    <p>Get the latest updates from around the world.</p>
+</div>
+
+<h2 align="center">Latest News</h2>
+
+<div class="container">
+
+    <div class="card" id="national">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEy904KGJNecRcYcFqnX9LzLMDYT0YDLmf6WdafiBGOqr-qORJham-ULJm&s=10">
+        <h3>National News</h3>
+        <p>Latest updates and important events from India.</p>
+        <p><b>Author:</b> POTUPUREDDI KARTHIK CSM</p>
+    </div>
+
+    <div class="card" id="international">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmVFM_4scqU3a-eEyJDLfK3mK-SGkmHOk62CFI_YhaA&s=10">
+        <h3>International News</h3>
+        <p>Important news and events from around the world.</p>
+        <p><b>Author:</b> POTUPUREDDI KARTHIK CSM</p>
+    </div>
+
+    <div class="card" id="sports">
+        <img src="https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2019/10/live-sports-news-1-1571384768.jpg">
+        <h3>Sports News</h3>
+        <p>Latest cricket, football and other sports updates.</p>
+        <p><b>Author:</b> POTUPUREDDI KARTHIK CSM</p>
+    </div>
+
+    <div class="card" id="technology">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiOxOMPdcoIOh8DJX7QwPc7sOSNQEm8Pw00ZupqKSU9GvgXlOs_sJQGk&s=10">
+        <h3>Technology News</h3>
+        <p>New inventions, AI updates and technology trends.</p>
+        <p><b>Author:</b> POTUPUREDDI KARTHIK CSM</p>
+    </div>
+
+    <div class="card" id="business">
+        <img src="https://www.shutterstock.com/shutterstock/photos/262393247/display_1500/stock-photo-a-newspaper-with-the-headline-business-news-262393247.jpg">
+        <h3>Business News</h3>
+        <p>Latest market, finance and business updates.</p>
+        <p><b>Author:</b> POTUPUREDDI KARTHIK CSM</p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
